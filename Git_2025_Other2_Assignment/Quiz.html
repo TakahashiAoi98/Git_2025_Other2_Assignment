@@ -2,9 +2,24 @@
 <html lang="ja">
 	<head>
 	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	    <title>Quiz</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<h1>クイズに挑戦！</h1>
+		<div id="quiz-container">
+			<p id="question">システム開発の早い段階で、目に見える形で利用者の要求が確認できるように確認用のソフトウェアを作成する ソフトウェア開発モデルとして、最も適切なものはどれか。</p> [cite: 3]
+			<div id="choices">
+				<button class="choice" data-answer="アジャイル">アジャイル</button> [cite: 4]
+				<button class="choice" data-answer="ウォーターフォール">ウォーターフォール</button> [cite: 4]
+				<button class="choice" data-answer="スパイラル">スパイラル</button> [cite: 4]
+				<button class="choice" data-answer="プロトタイピング">プロトタイピング</button> [cite: 4]
+			</div>
+			<button id="submit-answer">解答する</button> [cite: 5]
+			<p id="result"></p>
+		</div>
+
 		<script src="Quiz.js"></script>
 	</body>
 </html>
